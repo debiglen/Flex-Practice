@@ -1,0 +1,144 @@
+body,
+html {
+  height: 100%;
+  margin: 0;
+  font-family: "Raleway", sans-serif;
+}
+
+.container {
+  position: relative;
+  height: 100vh;
+  background-image: url("https://img.freepik.com/free-vector/gradient-technology-futuristic-background_23-2149122416.jpg?w=740&t=st=1694607588~exp=1694608188~hmac=72ebd63f8b0eda0977c0cbec35d9652427bb10fa616e1d4b37fde05bba876108");
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(255, 255, 255);
+  box-sizing: border-box;
+  padding: 20px;
+}
+
+overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+header {
+  position: fixed;
+  top: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 0 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+header h1 {
+  color:white(202, 202, 194);
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+nav ul {
+  display: flex;
+  gap: 20px;
+  list-style-type: none;
+  padding: 50px;
+  margin: 0;
+  justify-content: space-evenly;
+}
+
+nav a {
+  color: rgb(252, 247, 247);
+  text-decoration: double;
+  font-size: 20px;
+  transition: color 0.3s ease;
+  text-transform: uppercase;
+}
+
+nav a:hover {
+  color: #b8d1b7;
+}
+
+main {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* Align items to the top */
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  gap: 20px;
+  padding-top: 100px;
+}
+.column {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  height: 100%; /* new */
+}
+
+.column h2 {
+  font-size: 35px;
+  margin: 0 0 10px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.column p {
+  font-size: 24px;
+  margin: 0 0 20px;
+  text-align: left;
+  line-height: 1.7; /* adjusted */
+}
+
+.cta-button {
+  padding: 10px 20px;
+  background: #3498db; /* No background */
+  border: 1px solid #e622cf; /* Orange border */
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  transition: border-color 0.3s ease, color 0.3s ease;
+}
+
+.cta-button:hover {
+  border-color: #d35400; /* Darker orange border on hover */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  color: #aa4909; /* Darker orange text on hover */
+}
+
+.card-container {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+  padding: 10px;
+  border-radius: 20px; /* Rounded corners */
+  box-shadow: 0 2px 10px rgba(66, 127, 155, 0.1); /* Shadow */
+  margin: 20px 0;
+}
+
+.card-container img {
+  width: 100%;
+  height: auto;
+}
+
+.card-container h2 {
+  font-size: 36px;
+  margin: 0 0 10px;
+}
+
+.card-container p {
+  font-size: 16px;
+  margin: 0 0 10px;
+  line-height: 2;
+}
